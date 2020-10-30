@@ -1,0 +1,339 @@
+/* Colour pallete */
+:root {
+    --white: #f7f7f7;
+    --grey: #f6eaf4; 
+    --pink: #e796e4;
+    --l_purple: #b5c2f6;
+    --m_purple: #5675eb;
+    --d_purple: #4c3c79;
+    --black: #373647;
+}
+
+
+/* Body */
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Raleway', sans-serif;
+    color: var(--black);
+}
+
+p,li { font-size: 1.15rem;}
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    padding: 0.25rem 5rem 0 0;
+} 
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: var(--d_purple);
+    text-decoration: none;
+}
+
+.menu li a:hover { transform: scale(1.2); }
+
+.hamburger {
+    display: none; /* don't need it on a large screen */
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* Header */
+.top_wave {
+    margin: -2rem 0 -1rem 0; /* Had to add negative margin to fit into layout nicely, couln't find answer if there's other way of removing the empty space between, margin 0 didn't work */
+}
+
+#header {
+    text-align: center;
+    background: var(--m_purple);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#header h1 {
+    padding: 0.5rem;
+    font-size: 7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+#header h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+#header h2 a {
+    font-family: 'VT323', monospace;
+    font-size: 2.5rem;
+}
+
+#header a {
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+#header a:link { color: var(--pink); }
+#header a:visited { color: var(--pink); } 
+#header a:hover { color: var(--l_purple); }
+#header a:active { color: var(--d_purple); }
+
+.bottom_wave {
+    transform: rotate(180deg);
+    margin-top: -0.25rem;
+}
+
+
+/* Project */
+.h1stroke {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--black);
+} 
+
+main h2 {    
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--d_purple)
+}
+
+main h4 {
+    padding: 2.5rem 0 1.5rem 0;
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--m_purple);
+}
+
+main h5 {
+    font-size: 1.15rem; 
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 0;
+}
+
+main p, li {line-height: 2rem;}
+
+main li {padding: 0.3rem;}
+
+/* Unit 1 */ 
+
+.unit1 { margin: 2rem;}
+
+.u1outcome1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.u1outcome1 img:hover {
+    cursor: pointer;
+}
+.u1outcome1, .u1outcome2, .u1outcome3 {
+    background-color: var(--grey);
+    padding:1rem;
+    margin: 1rem;
+    border-radius:20px;
+    border: 3px solid #fff;
+}
+
+.u1outcome1, .u1outcome2, .u1outcome3 ul{
+    padding: 0 2rem 1rem 2rem;
+}
+
+.outcome1and2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.plink {
+    text-decoration: none;
+    color: var(--pink);
+    font-weight: 600;
+    font-size: 1.35rem;
+ }
+
+/* Unit 1 & 2 clickable /
+
+
+
+
+
+/* Unit 2 */ 
+
+.outcomebox2 {
+    width: 60%;
+    margin: 3rem auto;
+    text-align: center;
+    background-color: var(--grey);
+    padding:1rem;
+    border-radius:20px;
+    border: 3px solid #fff;
+}
+
+/* About */
+
+.about{
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    background-color: #fff;
+    border: 3px solid var(--grey);
+    border-radius: 20px;
+}
+
+.hi img {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.about h1 {padding: 3rem;}
+
+.about p { 
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.25px;
+}
+
+.abouttext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contact */
+.contact {margin: 12rem;}
+
+.icons { 
+    margin: 3rem;
+    display: flex; 
+    justify-content: center;
+}
+
+.icons a { 
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.icons a img { width:100px;}
+.icons a img:hover {transform: scale(1.2);}
+
+
+/* Footer */
+.footer_wave a { text-decoration: none;}
+
+.footer_wave h1 { 
+    font-size: 2rem;
+    letter-spacing: 3px;
+    -webkit-text-stroke-color: #ebd7e7
+}
+
+.footer_wave h1:hover { transform: scale(1.2);}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+
+
+    #header h1 { font-size: 5rem;}
+    #header h2 { font-size: 1.75rem;}
+
+}
+
+/* Tablets */
+@media only screen and (max-width: 870px) {
+
+    body {
+        overflow-x: hidden; 
+    }
+
+    /*Nav & header */
+    .menu{ 
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu li a { 
+        padding: 0.25rem;
+        letter-spacing: 2px;
+    }
+
+    .menu.show {display:flex;}
+    .hamburger { display: block; }
+
+    .logo { width: 175px;}
+
+    .top_wave {margin: -0.5rem; }
+
+    #header h1 { font-size: 4rem;}
+    #header h2 { font-size: 1.25rem;}
+
+    /*Project */
+    .unit1 { margin: 1rem;}
+
+    .outcome1and2 {
+        display: block;
+    }
+
+    .outcomebox2 {width: 85%;}
+
+    /* About Me */
+    .about { display: block; }
+
+    .imgcont { display: flex;}
+
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width: 568px) {
+
+    .logo { width: 150px;}
+    #header h1 { font-size: 3.25rem;}
+    #header h2 { font-size: 1rem;}
+
+    .unit1 { margin: 0;}
+
+    .icons a img { width: 55px; }
+
+    .footer_wave { margin-top: 4rem;}u
+}
