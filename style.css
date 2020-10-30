@@ -113,6 +113,55 @@ nav {
     margin-top: -0.25rem;
 }
 
+/* About */
+
+.about{
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    background-color: #fff;
+    border: 3px solid var(--grey);
+    border-radius: 20px;
+}
+
+.hi img {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.about h1 {padding: 3rem;}
+
+.about p { 
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.25px;
+}
+
+.abouttext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contact */
+.contact {margin: 12rem;}
+
+.icons { 
+    margin: 3rem;
+    display: flex; 
+    justify-content: center;
+}
+
+.icons a { 
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.icons a img { width:100px;}
+.icons a img:hover {transform: scale(1.2);}
+
+
 
 /* Project */
 .h1stroke {
@@ -188,11 +237,6 @@ main li {padding: 0.3rem;}
     font-size: 1.35rem;
  }
 
-/* Unit 1 & 2 clickable /
-
-
-
-
 
 /* Unit 2 */ 
 
@@ -205,54 +249,6 @@ main li {padding: 0.3rem;}
     border-radius:20px;
     border: 3px solid #fff;
 }
-
-/* About */
-
-.about{
-    width: 90%;
-    margin: 5rem auto;
-    display: flex;
-    background-color: #fff;
-    border: 3px solid var(--grey);
-    border-radius: 20px;
-}
-
-.hi img {
-    width: 350px;
-    margin: 0 auto;
-}
-
-.about h1 {padding: 3rem;}
-
-.about p { 
-    padding: 1rem;
-    font-size: 1.5rem;
-    letter-spacing: 1.25px;
-}
-
-.abouttext{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* Contact */
-.contact {margin: 12rem;}
-
-.icons { 
-    margin: 3rem;
-    display: flex; 
-    justify-content: center;
-}
-
-.icons a { 
-    padding: 1rem;
-    margin-bottom: 5rem;
-}
-
-.icons a img { width:100px;}
-.icons a img:hover {transform: scale(1.2);}
 
 
 /* Footer */
@@ -319,6 +315,9 @@ main li {padding: 0.3rem;}
     .about { display: block; }
 
     .imgcont { display: flex;}
+
+    /* Contact */
+    .contact {margin: 12rem 0 12rem 0;}
 
 }
 
